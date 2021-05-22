@@ -13,10 +13,12 @@ const alpacaApi = (baseURL = config.BASE_URL) => {
 
    const getAccount = () => api.get('v2/account')
    const getPositions = () => api.get('v2/positions')
+   const getLastQuote = () => api.get('v2/getLastQuote/AAPL');
 
     return {
        getAccount,
-       getPositions
+       getPositions,
+       getLastQuote
    }
 }
 
