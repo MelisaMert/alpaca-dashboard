@@ -1,5 +1,5 @@
 import apisauce from 'apisauce'
-import config from '../config'
+import {config} from '../config'
 
 const alpacaApi = (baseURL = config.BASE_URL) => {
    const api = apisauce.create({
@@ -17,7 +17,7 @@ const alpacaApi = (baseURL = config.BASE_URL) => {
 
     return {
        getAccount,
-       getPositions,
+       getPositions, 
        getLastQuote
    }
 }

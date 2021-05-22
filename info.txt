@@ -1,0 +1,6 @@
+A Stock Market Tracker Using The Alpha Advantage API Stock Market System
+
+// let API_Call =   `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${StockSymbol}&outputsize=compact&apikey=${API_KEY}`;
+
+
+stock.js 'e Stock Symbol Buttonları Ekle ,  Haftalık , Günlük Rapor Çek

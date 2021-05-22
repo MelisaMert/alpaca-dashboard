@@ -5,7 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import DashboardScreen from './screen/DashboardScreen';
 import SearchScreen from './screen/SearchScreen';
 import SettingsScreen from './screen/SettingsScreen';
-import ActivityScreen from './screen/ActivityScreen';
+import StocksScreen from './screen/StocksScreen';
 
 function HomeScreen() {
   return (
@@ -28,25 +28,29 @@ export default function App() {
             ),
           }}
         />
+
+        <Tab.Screen
+          name="Stocks"
+          component={StocksScreen}
+          options={{
+            tabBarIcon: (props) => (
+              <Ionicons name="ios-pulse" color="gray" size={25} />
+            ),
+          }}
+        />
+
+
         <Tab.Screen
           name="Settings"
           component={SettingsScreen}
           options={{
             tabBarIcon: (props) => (
-              <Ionicons name="ios-options" color="gray" size={25}/>
+              <Ionicons name="ios-options" color="gray" size={25} />
             ),
           }}
         />
 
-        <Tab.Screen
-          name="Activity"
-          component={ActivityScreen}
-          options={{
-            tabBarIcon: (props) => (
-              <Ionicons name="ios-pulse" color="gray"  size={25}/>
-            ),
-          }}
-        />
+
         <Tab.Screen
           name="Search"
           component={SearchScreen}
